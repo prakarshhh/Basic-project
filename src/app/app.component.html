@@ -1,0 +1,25 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-4">
+      <app-child [title]="t1"></app-child>
+    </div>
+    <div class="col-4">
+      <app-child [title]="t2"></app-child>
+    </div>
+    <div class="col-4">
+      <app-child [title]="t3"></app-child>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-4" *ngFor="let e of emps">
+      <app-child1 [data]="e"></app-child1>
+    </div>
+    
+  </div>
+</div>
+
+<!-- <app-child2 (sendmsg)="update($event)"> -->
+
+<!-- </app-child2> -->
